@@ -1,0 +1,50 @@
+#Update
+sudo apt-get update
+
+#Pre-requisites
+sudo apt-get install libglu1-mesa libxi-dev libxmu-dev -y
+sudo apt-get -y install build-essential
+sudo apt-get install python-pip python-dev -y
+sudo apt-get install python-numpy python-scipy -y
+
+#Install Nvidia Tesla k80 Drivers
+wget http://us.download.nvidia.com/XFree86/Linux-x86_64/390.42/NVIDIA-Linux-x86_64-390.42.run
+sudo chmod +x runfile
+sudo ./runfile
+
+#New way
+sudo add-apt-repository ppa:ubuntu-x-swat/x-updates
+sudo apt-get update
+sudo apt-get install nvidia-current
+
+
+#Check Driver
+nvidia-smi
+
+#Installing CUDA Toolkit
+#Cuda 9.0
+wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run
+chmod +x runfile
+sudo sh runfile
+export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+#CUDNN
+wget http://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/v7.0.4/prod/9.0_20171031/cudnn-9.0-linux-x64-v7.tgz?qaYdy-cHF4BbAPysOKZlGQwkDQyI9tJP3H5w68Xh34kLsFP7ekmqtBIyYcAyg5Py9UK68AZ1cGmOwOKrlkf_sIJwbvFMitr1_khnk3BX62VkbHnjIAK8fviPAKjpXpNmrTzY1GSaQ-yCqRCxnBUWzs_rwp_GnGztWng8tx6trimgz0cWkS9kWryOULojH8iEowZ_hxKzHq4
+tar -xvzf file
+
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
+sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/
+sudo chmod a+r /usr/local/cuda/include/cudnn.h
+sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+
+export PATH=/usr/local/cuda/include${PATH:+:${PATH}}
+export PATH=/usr/local/cuda/lib64${PATH:+:${PATH}}
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+#Install miniconda
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sudo sh Miniconda3-latest-Linux-x86_64.sh
