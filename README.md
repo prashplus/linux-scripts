@@ -25,6 +25,6 @@ But obviously, the INTERNET ;)
 2. DM for any changes or request for new script.
 ## Authors
 
-* **Prashant Piprotar** - - [PrashPlus](https://github.com/prashplus)
+* **Prashant Piprotar** - - [Prash+](https://github.com/prashplus)
 and visit my blog for more Tech Stuff
-## http://www.prashplus.com
+### http://www.prashplus.com
