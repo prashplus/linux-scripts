@@ -24,7 +24,7 @@ In addition to Swarm, Kubernetes, and Mesos, Rancher supports its own container 
 
 Step 1: Install the Docker on the host where you want deploy rancher server.
 ```
-sudo bash rancherdockersetup17.03.sh
+$ sudo bash rancherdockersetup17.03.sh
 ```
 
 Step 2: Run the Rancher server as a Docker container
