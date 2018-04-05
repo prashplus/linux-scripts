@@ -40,7 +40,7 @@ Step 2: Run the Rancher server as a Docker container
 $ sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server:stable
 ```
 
-Step 3: After few minutes, open the Rancher Server GUI at <Server IP>:8080 or localhost:8080
+Step 3: After few minutes, open the Rancher Server GUI at [Server IP]:8080 or localhost:8080
 
 Now you can browse the GUI for the further things like setting up the ENV or more.
 
