@@ -10,6 +10,7 @@ I know you don't want to waste your time in setting up all the pre-configuration
 ## Getting Started
 
 Just clone the repository or download the required script and execute it like:
+
 ```
 > sudo sh script.sh
 ```
@@ -23,8 +24,11 @@ But obviously, the INTERNET ;)
  
 1. All the Rancher Docker scripts are designed according to the Rancher's requirement for Docker. But, you can also use them for simple docker setup.
 2. DM for any changes or request for new script.
+
+
 ## Authors
 
 * **Prashant Piprotar** - - [Prash+](https://github.com/prashplus)
-and visit my blog for more Tech Stuff
+
+Visit my blog for more Tech Stuff
 ### http://www.prashplus.com
