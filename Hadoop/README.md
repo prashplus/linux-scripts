@@ -8,7 +8,7 @@ Apache Hadoop is a collection of open-source software utilities that facilitate 
 
 Just follow the simple steps to setup Hadoop Single node cluster.
 
-Step 1: Download the raw script from [here]:<https://github.com/prashplus/linux-scripts/raw/master/Hadoop/singlenode-setup.sh>
+Step 1: Download the raw script from [here]: https://github.com/prashplus/linux-scripts/raw/master/Hadoop/singlenode-setup.sh
 
 Assigne executable rights by:
 
