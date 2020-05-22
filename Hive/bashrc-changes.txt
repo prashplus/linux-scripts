@@ -1,0 +1,25 @@
+# Set HIVE_HOME
+
+export HIVE_HOME=/usr/local/apache-hive-3.1.2-bin
+export PATH=$PATH:/usr/local/apache-hive-3.1.2-bin/bin
+
+# Set Hadoop-related environment variables
+
+export HADOOP_HOME=/usr/local/hadoop-3.2.1
+export HADOOP_CONF_DIR=/usr/local/hadoop-3.2.1/etc/hadoop
+export HADOOP_MAPRED_HOME=/usr/local/hadoop-3.2.1
+export HADOOP_COMMON_HOME=/usr/local/hadoop-3.2.1
+export HADOOP_HDFS_HOME=/usr/local/hadoop-3.2.1
+export YARN_HOME=/usr/local/hadoop-3.2.1
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
+
+# Set JAVA_HOME
+
+export JAVA_HOME=/usr/lib/jvm/default-java
+export PATH=$PATH:/usr/lib/jvm/default-java/bin
+
+# Add Hadoop bin/directory to PATH
+
+export PATH=$PATH:/usr/local/hadoop-3.2.1/bin
+export HADOOP_PID_DIR=/usr/local/hadoop-3.2.1/hadoop2_data/hdfs/pid
