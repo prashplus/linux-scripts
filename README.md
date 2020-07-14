@@ -1,5 +1,8 @@
 # Linux-Scripts
 
+[![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-crayons.svg)](https://forthebadge.com)
+
 Good days for the developers are here. This repository will help them to setup prerequisites environments or installations in just a single command.
 
 Like setting up Docker is time consuming and sometimes you might get stuck installing multiple versions of it.
